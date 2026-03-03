@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broker Seguro | Software para Corredores de Seguros</title>
+    <meta name="description"
+        content="Software SaaS para Corredores de Seguros. Controla pólizas, vencimientos, renovaciones y comisiones sin usar Excel.">
+    <meta name="keywords"
+        content="Broker de seguros, software corredores, gestionar pólizas, CRM seguros, sistema de comisiones">
+    <meta name="author" content="Koalabits por Amephia Systems">
+
+    <!-- Open Graph / Meta -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://koalabits.com/broker-seguro">
+    <meta property="og:title" content="Broker Seguro | El Fin de las Renovaciones Perdidas">
+    <meta property="og:description"
+        content="Software especializado para centralizar la cartera de tu correduría. Reportes, alertas y portal de clientes integrados.">
+    <meta property="og:image" content="https://koalabits.com/assets/broker-seguro.png">
+
+    <!-- Twitter Meta -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://koalabits.com/broker-seguro">
+    <meta property="twitter:title" content="Broker Seguro | El Fin de las Renovaciones Perdidas">
+    <meta property="twitter:description"
+        content="Software especializado para centralizar la cartera de tu correduría. Reportes, alertas y portal de clientes integrados.">
+    <meta property="twitter:image" content="https://koalabits.com/assets/broker-seguro.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .bs-hero {
+            background-color: var(--slate);
+            color: white;
+            padding-bottom: 96px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+
+        @media (max-width: 900px) {
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .module-card {
+            background: white;
+            border: 1px solid var(--border-light);
+            padding: 32px;
+            border-radius: var(--radius-lg);
+            transition: var(--transition);
+        }
+
+        .module-card:hover {
+            box-shadow: var(--shadow-lg);
+            border-color: transparent;
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sticky Navbar -->
+    <header class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="/">
+                    <img src="/assets/koala-logo.png" alt="Koalabits Logo"
+                        style="width: 32px; height: 32px; margin-right: 12px; border-radius: 4px; object-fit: cover;">
+                    Koalabits
+                </a>
+            </div>
+            <nav class="nav-links">
+                <a href="/">Volver a Inicio</a>
+            </nav>
+            <div class="nav-action">
+                <a href="https://wa.me/593986059727?text=Hola! Quiero agendar una demo de BROKER SEGURO."
+                    target="_blank" class="btn btn-primary btn-sm">Solicitar Demo</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="bs-hero pt-32">
+            <div class="container hero-container text-center reveal pt-24" style="margin-top: 80px;">
+                <div class="badge fade-in"
+                    style="background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2); color: white;">
+                    Software para Corredores de Seguros</div>
+                <h1 class="hero-title slide-up text-white" style="max-width: 900px;">
+                    Deja de perder renovaciones.<br />Controla toda tu <span class="text-accent"
+                        style="color: #60a5fa;">cartera</span>.
+                </h1>
+                <p class="hero-subtitle slide-up delay-1 text-white-muted">Centraliza clientes, pólizas, vencimientos,
+                    reclamos y comisiones en una sola plataforma. Sin Excel. Sin desorden. Sin renovaciones perdidas.
+                </p>
+
+                <div class="hero-buttons slide-up delay-2">
+                    <a href="https://wa.me/593986059727?text=Hola! Quiero agendar una demo de BROKER SEGURO para mi correduría."
+                        target="_blank" class="btn" style="background: #2563eb; color: white; border-radius: 8px;"
+                        class="btn btn-primary btn-lg">Solicitar Demo Gratis
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hero Image -->
+            <div class="hero-visual reveal delay-3"
+                style="display: flex; justify-content: center; align-items: center; margin-top: 64px;">
+                <img src="/assets/broker-seguro.png" alt="Dashboard Broker Seguro"
+                    style="width: 100%; max-width: 1000px; height: auto; object-fit: contain; border-radius: 12px; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); border: 1px solid rgba(255,255,255,0.1);">
+            </div>
+        </section>
+
+        <!-- STATS -->
+        <section class="trust-bar bg-light" style="padding: 48px 0;">
+            <div class="container">
+                <div class="metrics-row reveal" style="margin-top: 0;">
+                    <div class="metric-item">
+                        <h4 class="text-primary">70%</h4>
+                        <p>Menos tiempo en reclamos</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="metric-item">
+                        <h4 class="text-primary">100%</h4>
+                        <p>Visibilidad de cartera</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="metric-item">
+                        <h4 class="text-primary">$49</h4>
+                        <p>Desde / mes</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAIN POINTS -->
+        <section class="about bg-white">
+            <div class="container text-center">
+                <h2 class="section-title reveal">Si te identificas con esto, necesitas Broker Seguro</h2>
+                <p class="section-desc max-w-2xl mx-auto mb-64 reveal delay-1">Estos son los problemas más comunes de
+                    los corredores de seguros que aún operan sin un sistema especializado.</p>
+
+                <div class="feature-grid reveal delay-2">
+                    <div class="module-card text-left">
+                        <div style="color: #ef4444; margin-bottom: 16px;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-bold mb-8">Pólizas en Excel</h3>
+                        <p class="text-sm text-body">Archivos dispersos, sin alertas de vencimiento. Cada renovación que
+                            se pierde es comisión que no cobras.</p>
+                    </div>
+                    <div class="module-card text-left">
+                        <div style="color: #ef4444; margin-bottom: 16px;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+                                <line x1="12" y1="9" x2="12" y2="13" />
+                                <line x1="12" y1="17" x2="12.01" y2="17" />
+                            </svg>
+                        </div>
+                        <h3 class="font-bold mb-8">Renovaciones perdidas</h3>
+                        <p class="text-sm text-body">Sin sistema de alertas, las pólizas vencen sin aviso. Tu cliente
+                            renueva con la competencia.</p>
+                    </div>
+                    <div class="module-card text-left">
+                        <div style="color: #ef4444; margin-bottom: 16px;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <line x1="18" y1="20" x2="18" y2="10" />
+                                <line x1="12" y1="20" x2="12" y2="4" />
+                                <line x1="6" y1="20" x2="6" y2="14" />
+                            </svg>
+                        </div>
+                        <h3 class="font-bold mb-8">Sin visibilidad de comisiones</h3>
+                        <p class="text-sm text-body">No tienes reporte claro de cuánto te deben las aseguradoras. Cobras
+                            de memoria o por fe.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MODULES -->
+        <section class="services bg-light">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <h2 class="section-title">Todo lo que necesitas, en un solo lugar</h2>
+                    <p class="section-desc max-w-2xl">Módulos diseñados para la operación real de un corredor de
+                        seguros.</p>
+                </div>
+
+                <div class="feature-grid mt-64">
+                    <div class="card service-card reveal">
+                        <div class="card-icon bg-blue-light text-blue">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                            </svg>
+                        </div>
+                        <h3 class="card-title text-base font-bold">Clientes y contactos</h3>
+                        <p class="card-desc text-sm">Ficha completa de cada cliente: datos, dependientes, historial de
+                            pólizas y reclamos. Búsqueda instantánea.</p>
+                    </div>
+                    <div class="card service-card reveal delay-1">
+                        <div class="card-icon" style="background: #ede9fe; color: #8b5cf6;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                <polyline points="14 2 14 8 20 8" />
+                                <line x1="16" y1="13" x2="8" y2="13" />
+                                <line x1="16" y1="17" x2="8" y2="17" />
+                                <polyline points="10 9 9 9 8 9" />
+                            </svg>
+                        </div>
+                        <h3 class="card-title text-base font-bold">Pólizas y cartera</h3>
+                        <p class="card-desc text-sm">Registro de pólizas con vigencia, estado, aseguradora y tipo de
+                            seguro. Vencimientos automáticos.</p>
+                    </div>
+                    <div class="card service-card reveal delay-2">
+                        <div class="card-icon" style="background: #ffe4e6; color: #f43f5e;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
+                                <path d="M13.73 21a2 2 0 0 1-3.46 0" />
+                            </svg>
+                        </div>
+                        <h3 class="card-title text-base font-bold">Alertas de vencimiento</h3>
+                        <p class="card-desc text-sm">Notificaciones automáticas cuando una póliza está por vencer. Tu
+                            equipo actúa antes de perder la renovación.</p>
+                    </div>
+                    <div class="card service-card reveal">
+                        <div class="card-icon" style="background: #fef3c7; color: #f59e0b;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <line x1="12" y1="1" x2="12" y2="23" />
+                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg>
+                        </div>
+                        <h3 class="card-title text-base font-bold">Comisiones y cobranzas</h3>
+                        <p class="card-desc text-sm">Reporte de comisiones por aseguradora y periodo. Controla lo que te
+                            deben y lo que ya cobraste.</p>
+                    </div>
+                    <div class="card service-card reveal delay-1">
+                        <div class="card-icon" style="background: #e0f2fe; color: #0ea5e9;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <line x1="18" y1="20" x2="18" y2="10" />
+                                <line x1="12" y1="20" x2="12" y2="4" />
+                                <line x1="6" y1="20" x2="6" y2="14" />
+                            </svg>
+                        </div>
+                        <h3 class="card-title text-base font-bold">Dashboard KPIs</h3>
+                        <p class="card-desc text-sm">KPIs en tiempo real: pólizas activas, reclamos pendientes,
+                            comisiones y siniestralidad. Todo en un clic.</p>
+                    </div>
+                    <div class="card service-card reveal delay-2">
+                        <div class="card-icon" style="background: #d1fae5; color: #10b981;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10" />
+                                <line x1="2" y1="12" x2="22" y2="12" />
+                                <path
+                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                            </svg>
+                        </div>
+                        <h3 class="card-title text-base font-bold">Portal del cliente</h3>
+                        <p class="card-desc text-sm">Tus asegurados consultan pólizas, crean reclamos y suben documentos
+                            sin llamarte. Menos carga operativa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="about bg-white" style="text-align: center; padding: 120px 0;">
+            <div class="container reveal">
+                <h2 class="section-title">¿Cuántas renovaciones perdiste este mes?</h2>
+                <p class="section-desc max-w-2xl mx-auto mb-32">Una sola póliza que se renueva a tiempo paga años
+                    enteros de este sistema. Déjanos mostrarte cómo funciona de cerca en una demostración guiada sin
+                    compromiso.</p>
+                <a href="https://wa.me/593986059727?text=Hola! Quiero agendar una demo de BROKER SEGURO."
+                    target="_blank" class="btn"
+                    style="background: #2563eb; color: white; border-radius: 8px; font-size: 1.125rem; padding: 16px 32px;">Agendar
+                    Demostración Vía WhatsApp</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer bg-white border-top border-light">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo mb-16">
+                    <img src="/assets/koala-logo.png" alt="Koalabits Logo"
+                        style="width: 20px; height: 20px; margin-right: 8px; border-radius: 2px;">
+                    Koalabits
+                </div>
+                <p class="text-sm text-muted max-w-xs">Software y Web de alta gama. Ecosistema de AmePhia Systems.</p>
+            </div>
+            <div class="footer-links">
+                <h4 class="footer-title">Productos</h4>
+                <ul>
+                    <li><a href="/broker-seguro.html">Broker Seguro</a></li>
+                </ul>
+            </div>
+            <div class="footer-legal">
+                <h4 class="footer-title">Soporte</h4>
+                <p class="text-sm text-muted">hola@koalabits.com</p>
+            </div>
+        </div>
+        <div class="container border-top border-light mt-48 py-24 text-center">
+            <p class="text-xs text-muted">© 2026 Koalabits. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>

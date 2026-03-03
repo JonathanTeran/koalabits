@@ -1,0 +1,195 @@
+/* =========================================================================
+   PRO LEVEL ENHANCEMENTS (Iteración 6)
+   Preloader, FAQ, Floating Actions, Magnetic Hover
+   ========================================================================= */
+
+/* 1. PRELOADER */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--dark);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.8s cubic-bezier(0.77, 0, 0.175, 1), opacity 0.8s ease;
+}
+
+.preloader svg {
+    animation: pulseLogo 1.5s infinite;
+}
+
+.preloader.fade-up {
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+@keyframes pulseLogo {
+    0% {
+        transform: scale(0.9);
+        opacity: 0.7;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0.9);
+        opacity: 0.7;
+    }
+}
+
+/* 2. WHATSAPP FLOATING BUTTON (High Conversion) */
+.wa-float {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    width: 64px;
+    height: 64px;
+    background-color: #25d366;
+    /* Official WhatsApp Green */
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+    z-index: 900;
+    transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    border: 2px solid white;
+    animation: wa-bounce 2s infinite ease-in-out;
+}
+
+.wa-float svg {
+    width: 32px;
+    height: 32px;
+}
+
+.wa-float:hover {
+    transform: translateY(-8px) scale(1.1);
+    background-color: #1ebc59;
+    /* Slightly darker green on hover */
+    box-shadow: 0 15px 40px rgba(37, 211, 102, 0.6);
+    animation: none;
+    /* Stop bounce on hover */
+}
+
+@keyframes wa-bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+/* 3. MAGNETIC HOVER CARDS (Servicios) */
+.service-card {
+    position: relative;
+    overflow: hidden;
+    /* Reset existing transitions that might conflict with JS */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(800px circle at var(--mouse-x, 0) var(--mouse-y, 0),
+            rgba(37, 99, 235, 0.08),
+            /* Primary blue glow */
+            transparent 40%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    /* Allows hovering the exact card underneath */
+    z-index: 1;
+}
+
+.service-card:hover::before {
+    opacity: 1;
+}
+
+/* Ensure contents stay above the magnetic glow */
+.service-card>* {
+    position: relative;
+    z-index: 2;
+}
+
+/* 4. FAQ ACCORDION */
+.faq-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.faq-item {
+    background: white;
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.faq-item:hover {
+    border-color: rgba(37, 99, 235, 0.3);
+}
+
+.faq-question {
+    width: 100%;
+    text-align: left;
+    padding: 24px 32px;
+    background: transparent;
+    border: none;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.faq-question svg {
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    color: var(--muted);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    background: rgba(249, 250, 251, 0.5);
+    /* ultra light gray */
+}
+
+.faq-answer p {
+    padding: 0 32px 24px 32px;
+    color: var(--text);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* FAQ Active State */
+.faq-item.active {
+    border-color: var(--primary);
+    box-shadow: 0 4px 20px rgba(37, 99, 235, 0.05);
+}
+
+.faq-item.active .faq-question svg {
+    transform: rotate(180deg);
+    color: var(--primary);
+}
